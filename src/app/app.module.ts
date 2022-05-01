@@ -10,6 +10,8 @@ import { RecepieDetailComponent } from './recepies/recepie-detail/recepie-detail
 import { RecepieItemComponent } from './recepies/recepie-list/recepie-item/recepie-item.component';
 import { ShopingListComponent } from './shoping-list/shoping-list.component';
 import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.component';
+import { BcDirective } from './directives/bc.directive';
+import { BetterBcDirective } from './directives/better-bc.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.c
     RecepieDetailComponent,
     RecepieItemComponent,
     ShopingListComponent,
-    ShopingEditComponent
+    ShopingEditComponent,
+    BcDirective,
+    BetterBcDirective
   ],
   imports: [
     BrowserModule,
