@@ -11,13 +11,13 @@ export class ShopingEditComponent implements OnInit {
   @ViewChild('nameInput') nameInputRef?:ElementRef;
   @ViewChild('amountInput') amountInputRef?:ElementRef;
 
-  @Output() ingredientAdded=new EventEmitter<Ingredient>();
+  @Output() ingAdded=new EventEmitter<Ingredient>();
 
-  onAddItem(){
+  onAddIng(){
     const ingName=this.nameInputRef?.nativeElement.value;
     const ingAmount=this.amountInputRef?.nativeElement.value;
     const newIngredient=new Ingredient(ingName,ingAmount);
-    this.ingredientAdded?.emit(newIngredient);
+    this.ingAdded?.emit(newIngredient);
   }
 
   constructor() { }
