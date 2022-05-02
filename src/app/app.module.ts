@@ -13,6 +13,7 @@ import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.c
 import { BcDirective } from './directives/bc.directive';
 import { BetterBcDirective } from './directives/better-bc.directive';
 import { UnlessDirective } from './directives/unless.directive';
+import { DropdownDirective } from './directives/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { UnlessDirective } from './directives/unless.directive';
     ShopingEditComponent,
     BcDirective,
     BetterBcDirective,
-    UnlessDirective
+    UnlessDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
